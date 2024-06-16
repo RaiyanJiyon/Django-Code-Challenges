@@ -1,0 +1,18 @@
+<!-- myapp/templates/myapp/display.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Template</title>
+</head>
+<body>
+    <h1>Dynamic Data</h1>
+    
+    <p>{{ extra_info }}</p>
+
+    <ul>
+        {% for item in data %}
+            <li>{{ item.name }}: {{ item.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
